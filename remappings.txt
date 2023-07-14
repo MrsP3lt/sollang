@@ -1,0 +1,10 @@
+@chainlink/=node_modules/@chainlink/
+@eth-optimism/=node_modules/@eth-optimism/
+@openzeppelin-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/
+@openzeppelin/=node_modules/@openzeppelin/contracts/
+@uniswap/=node_modules/@uniswap/
+@uniswap/v2-core/=node_modules/@uniswap/v2-core/
+@uniswap/v2-periphery/=node_modules/@uniswap/v2-periphery/
+ds-test/=lib/solmate/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+solmate/=lib/solmate/src/
