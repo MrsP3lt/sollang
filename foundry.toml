@@ -1,7 +1,7 @@
 [profile.default]
 # The Solc instance to use if any.
 # This takes precedence over `auto_detect_solc`, if a version is set then this overrides auto-detection.
-solc-version = "0.8.20"
+solc-version = "0.8.23"
 # The source directory
 src = 'src'
 # The test directory
@@ -11,17 +11,17 @@ script = 'script'
 # The artifact directory
 out = 'out'
 # A list of paths to look for libraries in
-libs = ['lib','node_modules']
+libs = ['lib', 'node_modules']
 # A list of remappings
 remappings = [
-    'ds-test/=lib/solmate/lib/ds-test/src/',
-    'forge-std/=lib/forge-std/src/',
-    'solmate/=lib/solmate/src/',
-    '@chainlink/=node_modules/@chainlink/',
-    '@openzeppelin/=node_modules/@openzeppelin/contracts',
-    '@openzeppelin-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable',
-    '@uniswap/v2-core/=node_modules/@uniswap/v2-core',
-    '@uniswap/v2-periphery=node_modules/@uniswap/v2-periphery',
+  'ds-test/=lib/solmate/lib/ds-test/src/',
+  'forge-std/=lib/forge-std/src/',
+  'solmate/=lib/solmate/src/',
+  '@chainlink/=node_modules/@chainlink/',
+  '@openzeppelin/=node_modules/@openzeppelin/contracts',
+  '@openzeppelin-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable',
+  '@uniswap/v2-core/=node_modules/@uniswap/v2-core',
+  '@uniswap/v2-periphery=node_modules/@uniswap/v2-periphery',
 ]
 # Whether to autodetect remappings by scanning the `libs` folders recursively
 auto_detect_remappings = true
@@ -58,7 +58,7 @@ optimizer_runs = 200
 # The verbosity of tests
 verbosity = 1
 # A list of ignored solc error codes
-ignored_error_codes = [1878, 5574,7239]
+ignored_error_codes = [1878, 5574, 7239]
 
 deny_warnings = true
 
@@ -113,7 +113,7 @@ sizes = false
 via_ir = false
 # Enables or disables RPC caching when forking
 
-no_rpc_rate_limit= false
+no_rpc_rate_limit = false
 
 no_storage_caching = false
 # Use the given hash method for the metadata hash that is appended
@@ -130,8 +130,8 @@ revert_strings = "default"
 # for `forge test`, but is experimental.
 sparse_mode = false
 # Contains alias -> URL|Env pairs for RPC endpoints that can be accessed during testing
-[rpc_endpoints] 
-sepolia = "${SEPOLIA_RPC_URL}" 
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
 mainnet = "${MAINNET_RPC_URL}"
 
 #solc = None
@@ -156,7 +156,7 @@ targets = 'default'
 # targets = [ 'assert' ]
 
 # Etherscan API key
-etherscan_api_key = "${ETHERSCAN_API_KEY}" 
+etherscan_api_key = "${ETHERSCAN_API_KEY}"
 # Only run test functions matching the specified regex pattern
 #test_pattern = None
 # Only run test functions that do not match the specified regex pattern
@@ -194,10 +194,7 @@ number_underscore = "preserve"
 single_line_statement_blocks = "preserve"
 override_spacing = false
 wrap_comments = false
-ignore = [
-  "src/console.sol",
-  "src/console2.sol"
-]
+ignore = ["src/console.sol", "src/console2.sol"]
 contract_new_lines = false
 
 [fuzz]

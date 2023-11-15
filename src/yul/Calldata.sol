@@ -3,7 +3,7 @@
  * @dev Abi decoder in solidity.
  */
 
-pragma solidity 0.8.20;
+pragma solidity ^0.8.20;
 
 contract Calldata {
 // function add(uint256 _a, uint256 _b) public view returns (uint256 result) {
