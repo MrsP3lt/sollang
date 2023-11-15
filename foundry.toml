@@ -194,7 +194,11 @@ number_underscore = "preserve"
 single_line_statement_blocks = "preserve"
 override_spacing = false
 wrap_comments = false
-ignore = ["src/console.sol", "src/console2.sol"]
+ignore = [
+  "src/console.sol",
+  "src/console2.sol",
+  "src/bug-reports/SOL-2023-3.yul",
+]
 contract_new_lines = false
 
 [fuzz]
