@@ -16,26 +16,11 @@ jobs:
         with:
           version: nightly
 
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.X
-
-      - name: Install Node Dependecies 
-        run: npm install
-      
-      - name: Compile Smart Contracts
-        run: npx hardhat compile
-      
-      - name: Hardhat Tests
-        run: npx hardhat test
-      
       - name: Check formatting
         run: forge fmt --check
 
       - name: Check formatting
         run: forge snapshot --check
-
 
       - name: Run tests
         run: forge test -vvv
